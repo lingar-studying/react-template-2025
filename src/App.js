@@ -1,7 +1,9 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Component1 } from './component1';
 import { DraftArea } from './DraftArea';
+import MyComponent from './MyComponent';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
           Edit  <code>src/App.js</code> and save to reload.
         </p>
         <DraftArea/>
+        <MyComponent/>
+        
         <a
           className="App-link"
           href="https://reactjs.org"

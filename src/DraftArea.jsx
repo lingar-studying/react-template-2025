@@ -1,5 +1,6 @@
 import { Car } from "./car";
 import { Component1 } from "./component1";
+import MyComponent from "./MyComponent";
 
 // the same is:
 // const DraftArea =(prors)=>{...}
@@ -48,6 +49,7 @@ export function DraftArea(props) {
       <p>
         my wife car={car2.company}, {car2.year}, {car2.model}
       </p>
+      <MyComponent/>
 
       <input type ="text" onChange={changeModel}/>
       <input type="text" onChange={changeModel2} />

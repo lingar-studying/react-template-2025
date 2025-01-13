@@ -4,7 +4,7 @@ export const MainArea=()=>{
 
     return(
         <>
-            <h1>This is main area of the app.  </h1>
+            <h2>This is main area of the app.  </h2>
         </>
     )
 }

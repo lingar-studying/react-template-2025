@@ -14,7 +14,16 @@ export const Car=()=>{
   </p>
   
 
-  <input type ="text" onChange={changeModel} value ={company}/>
-  {/* <input type="text" onChange={changeModel2} /> */}
-    </>)
+            <h3>component controlled by react ( by assigning the value directly). will be affected by reset</h3>
+   <input type="text" onChange={changeModel} value = {company} />
+
+
+            <h3>component uncontrolled by react ( no assigning the value directly). won't be affected by reset</h3>
+
+            <input type ="text" onChange={changeModel} />
+
+            <button onClick={() => setCompany("")}>איפוס</button>
+
+
+        </>)
 }

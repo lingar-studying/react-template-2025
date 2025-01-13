@@ -39,7 +39,7 @@ export function DraftArea(props) {
   return (
     
     <div>
-      <h1>draft area</h1>
+      <h2>draft area of the app</h2>
       <Component1 name="izhar" />
       <Component1 name="ido" />
       <p>

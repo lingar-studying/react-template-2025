@@ -23,7 +23,7 @@ export const Car=()=>{
 
 
     useEffect(()=>{
-       alert("Message has been changed");
+       console.log("Message has been changed");
 
     },[message]);
 

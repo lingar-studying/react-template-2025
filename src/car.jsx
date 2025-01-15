@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import {Box, Button} from "@mui/material";
 
 export const Car=()=>{
     const [company,setCompany]= useState("no company");
@@ -6,6 +7,27 @@ export const Car=()=>{
         const value= event.target.value;
         setCompany(value);
     }
+
+    const [message, setMessage] = useState("Don't know");
+
+    useEffect(()=>{
+        // setCompany("jjj " );
+        console.log("Company has changed ", company );
+        if(company.toLowerCase() === "honda"){
+            setMessage("Greate Company");
+        }else{
+            setMessage("I don't know");
+        }
+
+    },[company]);
+
+
+    useEffect(()=>{
+       alert("Message has been changed");
+
+    },[message]);
+
+
 
     return(
         <>
@@ -24,6 +46,8 @@ export const Car=()=>{
 
             <button onClick={() => setCompany("")}>איפוס</button>
 
-
+            <Box component = {"div"}>What do you say about my compnay? <br/>
+            {message}
+            </Box>
         </>)
 }

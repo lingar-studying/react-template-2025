@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Car } from "./car";
 import { Component1 } from "./component1";
 import MyComponent from "./MyComponent";
@@ -10,6 +11,7 @@ export function DraftArea(props) {
     year: 2020,
     model: 3,
   };
+  
   const car2={
     company: "mercedes",
     year: 2021,
